@@ -12,10 +12,13 @@
 .skin-live {
   //Navbar
   .main-header {
+    height: 64px;
     .navbar {
+      height: 64px;
       .navbar-variant(@live-header-color; #fff);
       .sidebar-toggle {
         color: #fff;
+        padding: 22px 22px;
         &:hover {
           background-color: @live-header-color;
         }
@@ -43,14 +46,17 @@
       }
       .navbar-nav > .user-menu {
         .dropdown-toggle {
+          padding-top: 16px;
           img {
             display: none;
           }
         }
       }
     }
-    //Logo
+    // Logo
     .logo {
+      height: 64px;
+      line-height: 64px;
       .logo-variant(@live-header-color, #fff);
     }
 
@@ -58,8 +64,9 @@
       background-color: @live-header-color;
     }
   }
-  
+
   .main-sidebar {
+    padding-top: 64px;
     .sidebar {
       .user-panel {
         display: none;
@@ -79,6 +86,13 @@
       .sidebar-menu > .active > a{
         background-color: @live-header-color;
         border-left-color: @live-sidebar-border-color;
+      }
+      .sidebar-menu > li{
+        text-align: center;
+        font-size: 18px;
+      }
+      .sidebar-menu > li > a{
+        padding: 20px;
       }
       .sidebar-menu > li > a:hover{
         background-color: @live-header-color;
