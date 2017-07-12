@@ -17,6 +17,7 @@
       height: 64px;
       .navbar-variant(@live-header-color; #fff);
       .sidebar-toggle {
+        display: none;
         color: #fff;
         padding: 22px 22px;
         &:hover {
@@ -31,6 +32,7 @@
             }
             a {
               color: #fff;
+              padding-top: 16px;
               &:hover {
                 background: @live-header-color;
               }
@@ -44,16 +46,18 @@
       .navbar-nav > li:last-child {
         display: none;
       }
+      .navbar-nav > li > a {
+        padding-top: 16px;
+      }
       .navbar-nav > .user-menu {
         .dropdown-toggle {
-          padding-top: 16px;
+          padding-top: 26px;
           img {
             display: none;
           }
         }
       }
     }
-    // Logo
     .logo {
       height: 64px;
       line-height: 64px;
